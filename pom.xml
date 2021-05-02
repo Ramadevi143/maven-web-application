@@ -95,21 +95,18 @@
 		
 	</dependencies>
 	
-	<distributionManagement>
-	
-	    <repository>
-	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://3.235.120.108:8081/repository/wallmart-releases/</url>
-	    </repository>
-	    
-	    <snapshotRepository>
-	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://3.235.120.108:8081/repository/wallmart-snapshots/</url>
-	    </snapshotRepository>
-	    
-	</distributionManagement>
+  <distributionManagement>
+      <repository>
+          <id>central</id>
+          <name>ip-172-31-41-251-releases</name>
+          <url>http://13.231.11.233:8081/artifactory/myrepo</url>
+      </repository>
+      <snapshotRepository>
+          <id>snapshots</id>
+          <name>ip-172-31-41-251-snapshots</name>
+          <url>http://13.231.11.233:8081/artifactory/myrepo</url>
+      </snapshotRepository>
+  </distributionManagement>
 	
 	<build>
 		<finalName>maven-web-application</finalName>
